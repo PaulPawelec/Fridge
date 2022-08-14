@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diet_New">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/dietsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="center"
+                android:text="Add New Diet"
+                android:textColor="#3C3F41"
+                android:textSize="24dp" />
+        </androidx.appcompat.widget.Toolbar>
+        <Button
+            android:id="@+id/acceptbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="#000"
+            android:text="Add Diet"/>
+        <ScrollView
+            android:id="@+id/menuScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/namediet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name of Diet"
+                    android:gravity="center"/>
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Category"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/descdiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/Monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserrat_light"/>
+
+                <TextView
+                    android:id="@+id/breakfast1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"/>
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe1"/>
+
+                <TextView
+                    android:id="@+id/dinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Dinner" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe2"/>
+
+                <TextView
+                    android:id="@+id/supper1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Supper" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe3"/>
+
+                <TextView
+                    android:id="@+id/Tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserrat_light"/>
+
+                <TextView
+                    android:id="@+id/breakfast2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Breakfast" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe4"/>
+
+                <TextView
+                    android:id="@+id/dinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Dinner" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe5"/>
+
+                <TextView
+                    android:id="@+id/supper2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Supper" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe6"/>
+
+                <TextView
+                    android:id="@+id/Wednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserrat_light"/>
+
+                <TextView
+                    android:id="@+id/breakfast3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Breakfast" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe7"/>
+
+                <TextView
+                    android:id="@+id/dinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Dinner" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe8"/>
+
+                <TextView
+                    android:id="@+id/supper3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Supper" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe9"/>
+
+                <TextView
+                    android:id="@+id/Thursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserrat_light"/>
+
+                <TextView
+                    android:id="@+id/breakfast4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Breakfast" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe10"/>
+
+                <TextView
+                    android:id="@+id/dinner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Dinner" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe11"/>
+
+                <TextView
+                    android:id="@+id/supper4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Supper" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe12"/>
+
+                <TextView
+                    android:id="@+id/Friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserrat_light"/>
+
+                <TextView
+                    android:id="@+id/breakfast5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Breakfast" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe13"/>
+
+                <TextView
+                    android:id="@+id/dinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Dinner" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe14"/>
+
+                <TextView
+                    android:id="@+id/supper5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Supper" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe15"/>
+
+                <TextView
+                    android:id="@+id/Saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserrat_light"/>
+
+                <TextView
+                    android:id="@+id/breakfast6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Breakfast" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe16"/>
+
+                <TextView
+                    android:id="@+id/dinner6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Dinner" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe17"/>
+
+                <TextView
+                    android:id="@+id/supper6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Supper" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe18"/>
+
+                <TextView
+                    android:id="@+id/Sunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserrat_light"/>
+
+                <TextView
+                    android:id="@+id/breakfast7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Breakfast" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe19"/>
+
+                <TextView
+                    android:id="@+id/dinner7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Dinner" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipe20"/>
+
+                <TextView
+                    android:id="@+id/supper7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#696969"
+                    android:text="Supper" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Choose recipe"
+                    android:id="@+id/recipe21"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

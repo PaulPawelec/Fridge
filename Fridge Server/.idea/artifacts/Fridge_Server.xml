@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Fridge Server">
+    <output-path>$PROJECT_DIR$/out/artifacts/Fridge_Server</output-path>
+    <root id="root">
+      <element id="archive" name="Fridge_Server.jar">
+        <element id="module-output" name="Fridge Server" />
+      </element>
+    </root>
+  </artifact>
+</component>

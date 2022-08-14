@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ShoppingListColor">#4a9bff</color>
+    <color name="FridgeColor">#00406b</color>
+    <color name="DietColor">#0071ce</color>
+    <color name="MealsColor">#85aad6</color>
+    <color name="CustomBlue">#008dd2</color>
+    <color name="TextColor">#808080</color>
+    <color name="BackgroundColor">#ffffff</color>
+    <color name="ErrorColor">#D65E63</color>
+    <color name="CorrectColor">#92D692</color>
+</resources>

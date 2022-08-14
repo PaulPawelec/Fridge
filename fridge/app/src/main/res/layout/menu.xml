@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/menuScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/shortcutsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="SHORTCUTS"
+                android:textSize="24sp"
+                app:fontFamily="sans-serif" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/manageListButton"
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:background="@drawable/manage_lists2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/manageFridgeButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/manage_fridge2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/manageDietButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/manage_diet2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/suggestMealButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/suggest_meal2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/lastChangesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LAST CHANGES"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/shoppingListLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR SHOPPING LISTS"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/addProductToListButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add_prod_list2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/markAsBoughtButton"
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:background="@drawable/mark_bought2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/addUsersToListButton"
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:background="@drawable/add_users2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/addListButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add_list2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/removeListButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/remove_list2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/fridgeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR FRIDGE"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/addProductsToFridgeButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add_products2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/removeProductFromFridgeButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/remove_products2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/dietsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR DIETS"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/customiseMealsInDietButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/customise_meal2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/addDietButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add_diet2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/removeDietButton"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/remove_diet2"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

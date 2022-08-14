@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diet_View">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/dietsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="center"
+                android:text="View Diet"
+                android:textColor="#3C3F41"
+                android:textSize="24dp" />
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:id="@+id/menuScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/diet_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="category"
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/diet_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="desc"
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/Monday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:fontFamily="@font/montserrat_light"/>
+
+        <TextView
+            android:id="@+id/breakfast1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe1"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show1"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show1"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit1"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe2"
+                android:layout_toLeftOf="@+id/show2"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show2"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit2"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/supper1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supper"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe3"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show3"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show3"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit3"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/Tuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:fontFamily="@font/montserrat_light"/>
+
+        <TextView
+            android:id="@+id/breakfast2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe4"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show4"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show4"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit4"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe5"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show5"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show5"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit5"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/supper2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supper"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe6"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show6"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show6"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit6"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/Wednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="#000"
+            android:fontFamily="@font/montserrat_light"/>
+
+        <TextView
+            android:id="@+id/breakfast3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe7"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show7"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show7"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit7"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe8"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show8"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show8"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit8"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/supper3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supper"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#696969"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipe9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="recipe9"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/show9"
+                android:layout_alignParentLeft="true"/>
+
+            <Spinner
+                android:id="@+id/recipeSpinner9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/show9"
+                android:hint="Enter Name of Diet"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/show9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit9"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/edit9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/ok9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="OK"
+                android:visibility="gone" />
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/Thursday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#000"
+                android:fontFamily="@font/montserrat_light"/>
+
+            <TextView
+                android:id="@+id/breakfast4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe10"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show10"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show10"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit10"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dinner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe11"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show11"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show11"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit11"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/supper4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supper"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe12"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show12"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show12"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit12"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/Friday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#000"
+                android:fontFamily="@font/montserrat_light"/>
+
+            <TextView
+                android:id="@+id/breakfast5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe13"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show13"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show13"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit13"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dinner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe14"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show14"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show14"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit14"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/supper5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supper"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe15"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show15"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show15"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit15"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/Saturday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#000"
+                android:fontFamily="@font/montserrat_light"/>
+
+            <TextView
+                android:id="@+id/breakfast6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe16"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show16"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show16"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit16"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dinner6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe17"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show17"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show17"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit17"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/supper6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supper"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe18"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show18"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show18"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit18"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/Sunday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#000"
+                android:fontFamily="@font/montserrat_light"/>
+
+            <TextView
+                android:id="@+id/breakfast7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe19"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show19"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show19"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit19"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dinner7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe20"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show20"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show20"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit20"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/supper7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supper"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#696969"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recipe21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:text="recipe21"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/show21"
+                    android:layout_alignParentLeft="true"/>
+
+                <Spinner
+                    android:id="@+id/recipeSpinner21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/show21"
+                    android:hint="Enter Name of Diet"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/show21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/edit21"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/edit21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/ok21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="OK"
+                    android:visibility="gone" />
+            </RelativeLayout>
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
